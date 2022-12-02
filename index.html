@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row time-block" id="hourNine">
+        <label for="nineLabel" class="hour col-md-1">9 AM</label>
+        <textarea class="col-md-10 description" id="nineText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="nineBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourTen">
+        <label for="tenLabel" class="hour col-md-1">10 AM</label>
+        <textarea class="col-md-10 description" id="tenText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="tenBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourEleven">
+        <label for="elevenLabel" class="hour col-md-1">11 AM</label>
+        <textarea class="col-md-10 description" id="elevenText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="elevenBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourTwelve">
+        <label for="twelveLabel" class="hour col-md-1">12 PM</label>
+        <textarea class="col-md-10 description" id="twelveText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="twelveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourOne">
+        <label for="oneLabel" class="hour col-md-1">1 PM</label>
+        <textarea class="col-md-10 description" id="oneText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="oneBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourTwo">
+        <label for="twoLabel" class="hour col-md-1">2 PM</label>
+        <textarea class="col-md-10 description" id="twoText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="twoBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourThree">
+        <label for="threeLabel" class="hour col-md-1">3 PM</label>
+        <textarea class="col-md-10 description" id="threeText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="threeBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourFour">
+        <label for="fourLabel" class="hour col-md-1">4 PM</label>
+        <textarea class="col-md-10 description" id="fourText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="fourBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row time-block" id="hourFive">
+        <label for="fiveLabel" class="hour col-md-1">5 PM</label>
+        <textarea class="col-md-10 description" id="fiveText"></textarea>
+        <button class="btn col-md-1 saveBtn" id="fiveBtn"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
